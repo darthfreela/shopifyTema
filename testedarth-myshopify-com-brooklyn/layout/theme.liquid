@@ -34,6 +34,9 @@
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {% include 'google-fonts' %}
 
+  <!--FONTS ================================================== DarthFreelaTeam -->
+  {{ 'font.css' | asset_url | stylesheet_tag }}
+
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
   {% include 'oldIE-js' %}
@@ -240,7 +243,7 @@
                   {% assign child_list_handle = link.title | handleize %}
                   {% if linklists[child_list_handle].links != blank %}
                     <li class="site-nav__item site-nav__expanded-item site-nav--has-dropdown{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}" aria-haspopup="true">
-                      <a href="{{ link.url }}" class="site-nav__link">
+                      <a href="{{ link.url }}" class="site-nav__link testefontes">
                         {{ link.title }}
                         <span class="icon icon-arrow-down" aria-hidden="true"></span>
                       </a>
