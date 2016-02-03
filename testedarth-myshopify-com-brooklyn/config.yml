@@ -1,0 +1,12 @@
+---
+:api_key: 4a58693401307247bb3cf2a13415ebc6
+:password: 930fce81093a44fd5d28911b2a682b07
+:store: testedarth.myshopify.com
+:theme_id: 
+:whitelist_files:
+- layout/
+- assets/
+- config/
+- snippets/
+- templates/
+- locales/

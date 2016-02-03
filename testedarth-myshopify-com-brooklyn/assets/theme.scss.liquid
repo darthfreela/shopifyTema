@@ -1143,10 +1143,16 @@ input[type="image"] {
   form {
     margin: 0 auto;
     max-width: 520px;
-    padding: $gutter / 3;
+
+    .newsletter--form {
+      padding: $gutter / 3;
+    }
+    .note, .errors {
+      margin-bottom: 0;
+    }
   }
 
-  form,
+  form .newsletter--form,
   .newsletter__input {
     background-color: $colorBody;
   }

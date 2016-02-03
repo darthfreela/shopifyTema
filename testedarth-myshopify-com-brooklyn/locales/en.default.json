@@ -6,7 +6,7 @@
     },
     "404": {
       "title": "404 Page Not Found",
-      "subtext_html": "The page you were looking for does not exist. <a href=\"/\" class=\"text-link\">Click here</a> to continue shopping."
+      "subtext_html": "The page you were looking for does not exist. <a href=\"\/\" class=\"text-link\">Click here<\/a> to continue shopping."
     },
     "password_page": {
       "opening_soon": "Opening Soon",
@@ -20,7 +20,7 @@
       "signup_form_email_placeholder": "Your email",
       "signup_form_submit": "Submit",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -32,6 +32,7 @@
     },
     "newsletter_form": {
       "newsletter_email": "Sign up to our mailing list",
+      "newsletter_confirmation": "Thanks for subscribing",
       "submit": "Subscribe"
     },
     "search": {
@@ -79,7 +80,7 @@
       "update": "Update Cart",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
-      "continue_browsing_html": "Continue browsing <a href=\"/collections/all\">here</a>.",
+      "continue_browsing_html": "Continue browsing <a href=\"\/collections\/all\">here<\/a>.",
       "close_cart": "Close Cart"
     },
     "label": {
@@ -141,7 +142,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -221,10 +222,10 @@
     },
     "onboarding": {
       "modal_title": "Almost there...",
-      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"/admin/collections?tutorial=Frontpage\">add a product to this collection</a>.",
+      "no_products_html": "You have no products in your Frontpage collection. This placeholder will appear until you <a href=\"\/admin\/collections?tutorial=Frontpage\">add a product to this collection<\/a>.",
       "add_product": "Add a Product",
       "product_title": "Example Product Title",
-      "no_collections_html": "You don't have any collections to show here. <a href=\"/admin/custom_collections\">Add some collections</a> to go along with the default Frontpage.",
+      "no_collections_html": "You don't have any collections to show here. <a href=\"\/admin\/custom_collections\">Add some collections<\/a> to go along with the default Frontpage.",
       "add_collection": "Add a Collection",
       "collection_title": "Example Collection Title"
     }
@@ -245,14 +246,14 @@
   },
   "products": {
     "general": {
-      "save_html": "Save<br />{{ saved_amount }}",
+      "save_html": "Save<br \/>{{ saved_amount }}",
       "collection_return": "Back to {{ collection }}",
       "sale_price": "Sale price",
       "regular_price": "Regular price"
     },
     "product": {
       "sold_out": "Sold Out",
-      "sold_out_html": "Sold<br /> Out",
+      "sold_out_html": "Sold<br \/> Out",
       "unavailable": "Unavailable",
       "quantity": "Quantity",
       "add_to_cart": "Add to Cart"
@@ -276,7 +277,7 @@
       "add_to_apple_wallet": "Add to Apple Wallet"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%b %d, %Y"
   }
 }
