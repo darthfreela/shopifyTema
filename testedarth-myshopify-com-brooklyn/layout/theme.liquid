@@ -32,6 +32,7 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'darth.css' | asset_url | stylesheet_tag }}
   {% include 'google-fonts' %}
 
   <!--FONTS ================================================== DarthFreelaTeam -->
@@ -186,7 +187,7 @@
                 </button>
               </div>
             </div>
-            <div class="grid__item large--one-third medium-down--one-half">
+            <div class="grid__item large--one-third medium-down--one-half" id='logo'>
               {% comment %}
                 Use the uploaded logo from theme settings if enabled.
                 Site name gets precedence with H1 tag on homepage, div on other pages.
@@ -218,7 +219,7 @@
                 </div>
               {% endif %}
             </div>
-            <div class="grid__item large--two-thirds large--text-right medium-down--hide">
+            <div class="grid__item large--two-thirds large--text-right medium-down--hide" id="menu">
               {% comment %}
                 List out your main-menu linklist (default)
 
@@ -236,14 +237,13 @@
                 {% for link in linklists.main-menu.links %}
                   {% comment %}
                     Create a dropdown menu by naming a linklist the same as a link in the parent nav
-
                     More info on dropdowns:
                       - http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu
                   {% endcomment %}
                   {% assign child_list_handle = link.title | handleize %}
                   {% if linklists[child_list_handle].links != blank %}
                     <li class="site-nav__item site-nav__expanded-item site-nav--has-dropdown{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}" aria-haspopup="true">
-                      <a href="{{ link.url }}" class="site-nav__link testefontes">
+                      <a href="{{ link.url }}" class="site-nav__link">
                         {{ link.title }}
                         <span class="icon icon-arrow-down" aria-hidden="true"></span>
                       </a>

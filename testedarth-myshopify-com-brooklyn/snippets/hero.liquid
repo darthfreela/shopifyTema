@@ -31,8 +31,10 @@
       {% capture slide %}hero_slide_{{ i }}_enable{% endcapture %}
       {% capture slide_img %}hero_slide_{{ i }}.jpg{% endcapture %}
       {% capture slide_text_color %}hero_slide_{{ i }}_text_color{% endcapture %}
-      {% capture slide_heading %}hero_slide_{{ i }}_heading{% endcapture %}
+
       {% capture slide_subheading %}hero_slide_{{ i }}_subheading{% endcapture %}
+      {% capture slide_heading %}hero_slide_{{ i }}_heading{% endcapture %}
+      
       {% capture slide_cta %}hero_slide_{{ i }}_cta{% endcapture %}
       {% capture slide_link %}hero_slide_{{ i }}_link{% endcapture %}
       {% if settings[slide] %}
@@ -50,16 +52,18 @@
           <div class="hero__text-wrap">
             <div class="hero__text-align">
               <div class="hero__text-content">
-                {% unless settings[slide_subheading] == blank %}
-                  <p class="hero__subtitle">
-                    {{ settings[slide_subheading] }}
-                  </p>
-                {% endunless %}
+               
                 {% unless settings[slide_heading] == blank %}
                   <h1 class="hero__title">
                     {{ settings[slide_heading] }}
                   </h1>
                 {% endunless %}
+                 {% unless settings[slide_subheading] == blank %}
+                  <p class="hero__subtitle">
+                    {{ settings[slide_subheading] }}
+                  </p>
+                {% endunless %}
+                
                 {% unless settings[slide_cta] == blank %}
                   <a href="{{ settings[slide_link] }}" class="btn hero__cta">
                     {{ settings[slide_cta] }} <span class="icon icon-arrow-right" aria-hidden="true"></span>

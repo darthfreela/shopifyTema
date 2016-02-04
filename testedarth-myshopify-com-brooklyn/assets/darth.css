@@ -1,0 +1,19 @@
+/*============================================= CSS ======================================*/
+
+#logo /*logo Darthfreela Team*/
+{
+  position:absolute;
+  left:44%;
+}
+
+#menu{
+   position: relative;
+   left: -11em;
+   font-size:0.750em !important;
+}
+#AccessibleNav {
+  padding-top:4em;
+  padding-left:0px;
+
+}
+

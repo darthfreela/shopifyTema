@@ -889,6 +889,9 @@ select {
 
 h1 {
   font-size: em($headerBaseFontSize);
+  /*----- css darthfreelateam -----*/
+  font-family: 'Avenir-Heavy';
+  line:52px;
 }
 
 h2 {
@@ -1970,6 +1973,8 @@ $shareCountBg: $colorBody;
   .hero__subtitle {
     @include accentFontStack;
     margin-bottom: 15px;
+    /*----- CSS DarthFreleaTeam --------*/
+    font-family: 'Avenir-Book';
   }
 
   a.hero__cta {
@@ -2389,9 +2394,9 @@ $slick-opacity-not-active: 0.25;
 /*================ Text Shop Name ================*/
 .site-header__logo {
   font-size: em(20px);
-
+  
   @include at-query($min, $large) {
-    text-align: left;
+    text-align: center;
     font-size: em(25px);
   }
 
@@ -2402,6 +2407,24 @@ $slick-opacity-not-active: 0.25;
       margin-bottom: $gutter / 3;
     }
   }
+}
+
+
+#logo /*logo Darthfreela Team*/
+{
+  position:absolute;
+  left:44%;
+}
+
+#menu{
+   position: relative;
+   left: -11em;
+   font-size:0.750em !important;
+}
+#AccessibleNav {
+  padding-top:3em;
+  padding-left:0px;
+
 }
 
 .site-header__logo a,
@@ -2417,6 +2440,7 @@ $slick-opacity-not-active: 0.25;
     color: #000;
   }
 }
+
 
 /*================ Nav Links ================*/
 .site-nav {
@@ -2437,6 +2461,7 @@ $slick-opacity-not-active: 0.25;
   @include transition('color 0.2s, opacity 0.1s');
   @include accentFontStack;
   font-size: em(14px);
+  font-family: 'MinionPro-Bold';
 
   .is-light & {
     color: #fff;
@@ -2445,13 +2470,6 @@ $slick-opacity-not-active: 0.25;
   .is-dark & {
     color: #000;
   }
-}
-
-/*============== CSS NAV MENU - DARTHFREELA ================*/
-.testefontes {
-
-  font-family: 'MinionPro-Bold';
-
 }
 
 .site-nav--has-dropdown {
