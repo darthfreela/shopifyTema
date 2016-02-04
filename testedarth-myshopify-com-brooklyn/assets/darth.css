@@ -1,19 +1,72 @@
 /*============================================= CSS ======================================*/
 
+/*=========================================================================HEADER*/
+h1{
+  font-family: 'Avenir-Heavy' !important;
+ }
+
+ .linkscart{
+ 	position:relative;
+ 	width: 2%;
+ 	height: 1em;
+ 	top: -1em;
+    left: 33em;
+ }
+
+.linkscart ul {
+	padding: 0;
+	margin: 0;
+}
+.linkscart ul>li{
+	display: inline-block;
+}
+#btnShop{
+	border:solid 1px white;
+	background: transparent;
+	color:white;
+}
+#btnShop:hover{
+	background:white;
+	color:black;
+}
 #logo /*logo Darthfreela Team*/
 {
-  position:absolute;
-  left:44%;
+  position:relative;
+  top: -2em;
+  left: 43.5%;
+
 }
 
 #menu{
    position: relative;
-   left: -11em;
+   padding-top:3em;
+   float:left;
+   width: 100%;
    font-size:0.750em !important;
+   margin-top: 0px;
 }
+
 #AccessibleNav {
-  padding-top:4em;
-  padding-left:0px;
+     padding-top: 4em;
+    width: 100%;
+    align-content: center;
+    margin-left: -19.5em;
 
 }
 
+#navMenuLarge{
+	max-width: 100%;
+
+}
+
+#opc{
+	padding-right: 2em;
+}
+
+#cart{
+	position: relative;
+    top: -7em;
+    left: 3em;
+
+}
+/*======================================================================FIM HEADER*/

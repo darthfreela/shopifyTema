@@ -177,7 +177,7 @@
 
     <div class="header-wrapper{% unless hero_full_height %} header-wrapper--over-hero{% endunless %}">
       <header class="site-header" role="banner">
-        <div class="wrapper">
+        <div class="wrapper" id='navMenuLarge'>
           <div class="grid--full grid--table">
             <div class="grid__item large--hide one-quarter">
               <div class="site-nav--mobile">
@@ -242,7 +242,7 @@
                   {% endcomment %}
                   {% assign child_list_handle = link.title | handleize %}
                   {% if linklists[child_list_handle].links != blank %}
-                    <li class="site-nav__item site-nav__expanded-item site-nav--has-dropdown{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}" aria-haspopup="true">
+                    <li class="site-nav__item site-nav__expanded-item site-nav--has-dropdown{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}"  aria-haspopup="true">
                       <a href="{{ link.url }}" class="site-nav__link">
                         {{ link.title }}
                         <span class="icon icon-arrow-down" aria-hidden="true"></span>
@@ -256,14 +256,14 @@
                       </ul>
                     </li>
                   {% else %}
-                    <li class="site-nav__item site-nav__expanded-item{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}">
+                    <li class="site-nav__item site-nav__expanded-item{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless%}"   id="opc">
                       <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
                     </li>
                   {% endif %}
                 {% endfor %}
 
                 {% if shop.customer_accounts_enabled %}
-                  <li class="site-nav__item site-nav__expanded-item">
+                  <li class="site-nav__item site-nav__expanded-item   id="opc"">
                     <a class="site-nav__link site-nav__link--icon" href="/account">
                       <span class="icon-fallback-text">
                         <span class="icon icon-customer" aria-hidden="true"></span>
@@ -296,7 +296,17 @@
                   </li>
                 {% endif %}
 
-                <li class="site-nav__item">
+              </ul>
+              <!-- //site-nav -->
+            </div>
+
+                {% comment %}
+                  links ao lado do cart
+                {% endcomment %}
+              <div class="linkscart">  
+                <ul ><li><a href="#">Help</a></li>
+                <li><a href="#">My Account</a></li>
+                <li class="site-nav__item" id="cart">
                   <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-right" aria-controls="CartDrawer">
                     <span class="icon-fallback-text">
                       <span class="icon icon-cart" aria-hidden="true"></span>
@@ -305,10 +315,9 @@
                     <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
                   </a>
                 </li>
+               </ul> 
+              </div>
 
-              </ul>
-              <!-- //site-nav -->
-            </div>
             <div class="grid__item large--hide one-quarter">
               <div class="site-nav--mobile text-right">
                 <a href="/cart" class="site-nav__link cart-link js-drawer-open-right" aria-controls="CartDrawer">
