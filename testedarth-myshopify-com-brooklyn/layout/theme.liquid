@@ -44,6 +44,7 @@
 
   {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
   {{ 'modernizr.min.js' | asset_url | script_tag }}
+  {{ 'darth.js' | asset_url | script_tag }}
 
   {% comment %}
     If you store has customer accounts disabled, you can remove the following JS file
@@ -172,9 +173,10 @@
       <div id="CartContainer" class="drawer__cart"></div>
     </div>
   </div>
-
+  
+  
   <div id="PageContainer" class="is-moved-by-drawer">
-
+  
     <div class="header-wrapper{% unless hero_full_height %} header-wrapper--over-hero{% endunless %}">
       <header class="site-header" role="banner">
         <div class="wrapper" id='navMenuLarge'>
@@ -226,6 +228,12 @@
                 More info on linklists:
                   - http://docs.shopify.com/themes/liquid-variables/linklists
               {% endcomment %}
+              <!--Div Search -->
+  <div id="divSearch">
+    <ul>
+      <li><a href="#">{{ 'iconSearch.png' | asset_url | img_tag }}<span>Search</span></a></li>
+    </ul>
+  </div>
               <!-- begin site-nav -->
               <ul class="site-nav" id="AccessibleNav">
                 <li class="site-nav__item site-nav--compress__menu">
@@ -309,7 +317,7 @@
                 <li class="site-nav__item" id="cart">
                   <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-right" aria-controls="CartDrawer">
                     <span class="icon-fallback-text">
-                      <span class="icon icon-cart" aria-hidden="true"></span>
+                     {{ 'basket.png' | asset_url | img_tag }}
                       <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                     </span>
                     <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
@@ -322,7 +330,7 @@
               <div class="site-nav--mobile text-right">
                 <a href="/cart" class="site-nav__link cart-link js-drawer-open-right" aria-controls="CartDrawer">
                   <span class="icon-fallback-text">
-                    <span class="icon icon-cart" aria-hidden="true"></span>
+                   {{ 'basket.png' | asset_url | img_tag }}
                     <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                   </span>
                   <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
@@ -344,13 +352,14 @@
         </div>
       </header>
     </div>
-
     <main class="main-content" role="main">
-      <div class="wrapper">
-        {{ content_for_layout }}
+          <div class="wrapper">
+    
+          {{ content_for_layout }}
+
       </div>
     </main>
-
+     
     {% if settings.footer_newsletter_enable %}
       <div class="newsletter">
         <div class="wrapper">
@@ -412,6 +421,7 @@
         </div>
       </div>
     {% endif %}
+    
 
     <hr class="hr--large">
     <footer class="site-footer small--text-center" role="contentinfo">

@@ -2,24 +2,42 @@
 
 /*=========================================================================HEADER*/
 h1{
-  font-family: 'Avenir-Heavy' !important;
+  font-family: 'Avenir Heavy' !important;
+ }
+
+ h2{
+  color:white;
+  font-size: 1.75em;
+  font-family: 'Minion Pro Regular';
+
  }
 
  .linkscart{
  	position:relative;
  	width: 2%;
  	height: 1em;
- 	top: -1em;
-    left: 33em;
+ 	top: 0em;
+   left: 33em;
  }
 
 .linkscart ul {
-	padding: 0;
-	margin: 0;
+  position:relative;
+	top: -10em;
+	margin-left: 6em;
+  width: 13em;
 }
+
 .linkscart ul>li{
-	display: inline-block;
+  position:relative;
+  display: inline-block;
+  padding-right: 1em;
 }
+
+.linkscart ul>li>a{
+  position:relative;
+  color: white;
+}
+
 #btnShop{
 	border:solid 1px white;
 	background: transparent;
@@ -32,7 +50,7 @@ h1{
 #logo /*logo Darthfreela Team*/
 {
   position:relative;
-  top: -2em;
+  top: -4em;
   left: 43.5%;
 
 }
@@ -47,7 +65,7 @@ h1{
 }
 
 #AccessibleNav {
-     padding-top: 4em;
+    padding-top: 2em;
     width: 100%;
     align-content: center;
     margin-left: -19.5em;
@@ -65,8 +83,292 @@ h1{
 
 #cart{
 	position: relative;
-    top: -7em;
-    left: 3em;
+    
 
 }
+
+#divSearch{
+  position: relative;
+  top:-2.8em;
+  left: -101em;
+  font-family: 'Avenir Book';
+
+}
+
+#divSearch  ul>li{
+ display: inline-block;
+}
+
+#divSearch  ul>li>a{
+  color:white;
+}
+
+#divSearch ul>li>a>span{
+  padding-left: 0.4em;
+  font-size: 1.2em;
+}
 /*======================================================================FIM HEADER*/
+/*===================================INICIO LOGOMARCAS============================*/
+#divMarcas{
+  position: relative;
+  height: 5em;
+  width: 100%;
+  top:-1em;
+  left: 0;
+}
+
+#divMarcas ul>li{
+ display: inline-block;
+}
+
+#divMarcas ul> li> a{
+     padding: 0px 3em;
+}
+/*=======================================================================FIM MARCAS*/
+/*==================================INICIO PRODUTOS HOME===========================*/
+/*div principal*/
+.homeProduct{
+  position: relative;
+  top:0;
+  left: 0;
+  height: 37.500em;
+  width: 100%;
+
+}
+/*botao da div*/
+.btnProduct{
+  position: relative;
+  left: 1.3em;
+  height:1.563em; 
+  width:8.125em;
+  background-color: white;
+  top: -17px;
+}
+/*hr products*/
+.hrProduct{
+  position: relative;
+  margin-left: 4em;
+  top: -12px;
+}
+/*div produto 1*/
+#product1{
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  height: 36.2em;
+  width: 23.3em;
+  background: white;
+  padding-left: 0;
+  border-left: solid 0.5em white;
+  border-right: solid 0.5em white;
+  
+}
+
+#product1>a>img:hover{
+ background-color: rgba(107, 117, 123, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*conteudo das divs*/
+#divProduct1{
+  position: absolute;
+  display: none;
+  top: 13em;
+  left: 22%; 
+  text-align: center;
+  height: 13em;
+  width: 11em;
+  z-index: 1;
+}
+
+
+/*div produto 2*/
+#product2{
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  height: 18.125em;
+  width: 36em;
+  background: white;
+  border-left: solid 0.5em white;
+  border-right: solid 0.5em white;
+
+ 
+}
+#product2>a>img:hover{
+    background-color: rgba(107, 117, 123, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*conteudo das divs*/
+#divProduct2{
+  position: absolute;
+  display: none;
+  top: 5em;
+  left: 33%; 
+  text-align: center;
+  height: 13em;
+  width: 11em;
+  z-index: 1;
+}
+
+/*div produto 3*/
+#product3{
+  position: relative;
+  float:left;
+  top: 0;
+  left: 0;
+  height: 18.125em;
+  width: 36em;
+  background: white;
+  border-left: solid 0.5em white;
+  border-right: solid 0.5em white;
+  border-top: solid 1em white;
+}
+#product3>a>img:hover{
+  background-color: rgba(107, 117, 123, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+/*conteudo das divs*/
+#divProduct3{
+  position: absolute;
+  display: none;
+  top: 5em;
+  left: 33%;
+  text-align: center;
+  height: 13em;
+  width: 11em;
+  z-index: 1;
+}
+
+/*div produto 4*/
+#product4{
+  position: relative;
+  float: right;
+  top: -18.1em;;
+  left: 0;
+  height: 18.125em;
+  width: 25.000em;
+  background: white;
+  border-left: solid 0.5em white;
+  border-right: solid 0.5em white;
+  
+}
+#product4>a>img:hover{
+background-color: rgba(107, 117, 123, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+/*conteudo das divs*/
+#divProduct4{
+  position: absolute;
+  display: none;
+  top: 5em;
+  left: 29%;
+  text-align: center;
+  height: 13em;
+  width: 11em;
+  z-index: 1;
+}
+
+/*div produto 5*/
+#product5{
+  position: relative;
+  float:right;
+  top: -18.1em;;
+  left: 0;
+  height: 18.125em;
+  width: 25.000em;
+  background: white;
+  border-left: solid 0.5em white;
+  border-right: solid 0.5em white;
+  border-top: solid 1em white;
+}
+#product5>a>img:hover{
+ background-color: rgba(107, 117, 123, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+/*conteudo das divs*/
+#divProduct5{
+  position: absolute;
+  display: none;
+  top: 5em;
+  left: 29%;
+  text-align: center;
+  height: 13em;
+  width: 11em;
+  z-index: 1;
+}
+
+/*img produc 1*/
+#imgProduct1>img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 36.2em;
+  width: 23.3em;
+}
+/*img produc 2*/
+#imgProduct2>img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 18.125em;
+  width: 36em;  
+}
+/*img produc 3*/
+#imgProduct3>img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 17em;
+  width: 36em;
+}
+/*img produc 4*/
+#imgProduct4>img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 18.125em;
+  width: 25.000em;
+}
+/*img produc 5*/
+#imgProduct5>img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 17em;
+  width: 25.000em;
+}
+/*tamanho da tela*/
+#PageContainer{
+    height: 1367px;
+}
+
+/*=======================================================================FIM PRODUTOS HOME*/
+/*==================================INICIO OUR BRAND===============================*/
+.h1Home{
+  font-size: 1.5em;
+  font-family: 'Avenir Medium'
+}
+
+.hrHome{
+  border: solid 1px black;
+}
+
