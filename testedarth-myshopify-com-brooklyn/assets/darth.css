@@ -362,12 +362,45 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 /*=======================================================================FIM PRODUTOS HOME*/
+/*==================================INICIO OUR BRAND===============================*/
+.fundo {
+  position: relative;
+  top: -121px;
+  left: 0;
+  background-color: rgba(223, 227, 228, 0.29);
+
+}
+
+.fundo>hr{
+  border:solid 1px black;
+  width:1em;
+}
+.h1Home{
+  font-size: 1.5em;
+  font-family: 'Avenir Medium'
+  color: #6b757b;
+}
+
+.hrHome{
+  border: solid 0.5px #424750;;
+}
+
+.formataTxt{
+  margin-left: 17em;
+  color: #4c4d4e;
+  width: 50em;
+}
+
+#gridItemTop {
+  margin-top: 2.5em;
+}
+/*=======================================================================FIM OUR BRAND*/
 /*==================================INICIO MARCAS2================================= */
 #divMarcas2{
   position: relative;
   height: 5em;
   width: 100%;
-  top:-1em;
+  top:-7em;
   left: 0;
 }
 
@@ -376,16 +409,8 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 #divMarcas2 ul> li> a{
-     padding: 0px 3em;
+     padding: 0px 2em;
 }
 /*=======================================================================FIM MARCAS 2*/
-/*==================================INICIO OUR BRAND===============================*/
-.h1Home{
-  font-size: 1.5em;
-  font-family: 'Avenir Medium'
-}
 
-.hrHome{
-  border: solid 1px black;
-}
 

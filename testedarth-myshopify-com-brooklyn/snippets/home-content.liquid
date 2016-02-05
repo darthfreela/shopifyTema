@@ -6,14 +6,30 @@
    <hr class="hr--medium hr--clear">
   {% endif %}
 
-  <div class="grid">
-    <div class="grid__item">
-      <div class="rte text-center">
-        <h1 class="h1Home">Our Brand</h1>
-        <hr class="hr--small hrHome">
-        {{ pages[settings.home_page_content].content }}
-        <hr class="hr--small hrHome">
+  <div class="grid fundo">
+    <div class="grid__item" id="gridItemTop">
+      <div class="rte text-center" id="txtOurBrand">
+        <h1 class="h1Home">{{ pages[settings.home_page_content].title}}</h1>
+        <div class="formataTxt">
+          <hr class="hr--small hrHome">
+          {{ pages[settings.home_page_content].content }}
+          <hr class="hr--small hrHome">
+        </div>
       </div>
     </div>
   </div>
 {% endif %}
+
+<!--MARCAS 2-->
+<div id="divMarcas2">
+  <ul>
+    <li><a href="#">{{'m20.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m21.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m22.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m23.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m24.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m25.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m26.png' | asset_url | img_tag}}</a></li>
+    <li><a href="#">{{'m27.png' | asset_url | img_tag}}</a></li>
+  </ul>
+</div>
