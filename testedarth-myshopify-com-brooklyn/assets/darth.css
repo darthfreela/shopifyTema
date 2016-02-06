@@ -106,6 +106,7 @@ h1{
 #divSearch ul>li>a>span{
   padding-left: 0.4em;
   font-size: 1.2em;
+  font-family: 'Arapey';
 }
 /*======================================================================FIM HEADER*/
 /*===================================INICIO LOGOMARCAS============================*/
@@ -365,7 +366,7 @@ background-color: rgba(107, 117, 123, 0.8);
 /*==================================INICIO OUR BRAND===============================*/
 .fundo {
   position: relative;
-  top: -121px;
+  top: 0.5em;
   left: 0;
   background-color: rgba(223, 227, 228, 0.29);
 
@@ -398,9 +399,9 @@ background-color: rgba(107, 117, 123, 0.8);
 /*==================================INICIO MARCAS2================================= */
 #divMarcas2{
   position: relative;
-  height: 5em;
+  height: 9em;
   width: 100%;
-  top:-7em;
+  top: 1em;
   left: 0;
 }
 
@@ -412,5 +413,196 @@ background-color: rgba(107, 117, 123, 0.8);
      padding: 0px 2em;
 }
 /*=======================================================================FIM MARCAS 2*/
+/*==================================IMG FOOTER=======================================*/
+.imgFooter{
+  position: relative;
+  top: -7em;
+  left: 0;
+  width: 100%;
+  height: 34.375em;
+}
 
+#img1{
+  position: relative;
+  float:left;
+  top: 0;
+  left: 0;
+}
 
+#img1>img{
+  width:43em;
+}
+
+#img2{
+  position: relative;
+  float:right;
+  top: 0;
+  left: 0;
+}
+
+#img2>img{
+  width:43em;
+}
+/*===============================footer=================================*/
+.darthFooter{
+  position:relative;
+  height:29em;
+  top: 0;
+  left: 0;
+
+}
+
+/*=========SOCIAL*/
+.social{
+  position: absolute;
+  top: 32%;
+  left: 69%;
+  width: 19em;
+  height: 5em;
+}
+
+.social>div{
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 18em;
+  height: 4em;
+}
+
+.social>span{
+  position: relative;
+  top: 0;
+  left: 4em;
+}
+
+.social>div>ul>li{
+  display: inline-block;
+}
+/*===========Links Cop*/
+#linksCop{
+  position: absolute;
+  top: 53%;
+  left: 73%;
+  width: 14em;
+  height: 1em;
+}
+
+#linksCop>a>span{
+  color:#6b757b;
+  font-size:0.75em;
+  font-style: 'Avenir Book';
+}
+
+/*=============First Column*/
+#colOne{
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  width: 15em;
+  
+}
+#colOne>span{
+  margin-left: 29%;
+  color: #4c4d4e;
+  font-size: 1em;
+  font-family: 'MinionPro';
+  font-weight: bolder;
+  padding-bottom: 0;
+}
+
+#colOne>div{
+  height: 28px;
+}
+
+#colOne>div>ul>li>a{
+  color: #4c4d4e;
+  font-size: 0.75em;
+  font-family: 'MinionPro';
+}
+
+#colTwo{
+  position: absolute;
+  top: 3%;
+  left: 33%;
+  width: 11em;
+}
+
+#colTwo>span{
+  margin-left: 29%;
+  color: #4c4d4e;
+  font-size: 1em;
+  font-family: 'MinionPro';
+  font-weight: bolder;
+}
+#colTwo>div{
+  height: 28px;
+}
+#colTwo>div>ul>li>a{
+  color: #4c4d4e;
+  font-size: 0.75em;
+  font-family: 'MinionPro';
+}
+
+#colThree{
+  position: absolute;
+  top: 3%;
+  left: 53%;
+  width: 12em;
+}
+
+#colThree>span{
+  margin-left: 29%;
+  color: #4c4d4e;
+  font-size: 1em;
+  font-family: 'MinionPro';
+  font-weight: bolder;
+}
+#colThree>div{
+  height: 28px;
+}
+#colThree>div>ul>li>a{
+  color: #4c4d4e;
+  font-size: 0.75em;
+  font-family: 'MinionPro';
+}
+
+#hrFooter{
+  position: relative;
+  width: 62em;
+  top: 0;
+  left: 0;
+  border: solid 0.5px #7D8787;
+}
+
+.newsletterdarth{
+  position: absolute;
+  top: 5em;
+  left: 71%;
+  width: 19em;
+  height: 45px;
+}
+.newdarth{
+  width: 100%;
+  height: 45px;;
+}
+
+.newsletterBtn{
+  width: 2em;
+  background-color: white;
+  border-bottom:solid 1px #7D8787;
+  border-right:solid 1px #7D8787;
+  border-top:solid 1px #7D8787;
+}
+.newsletterBtn:hover{
+  background-color: #7D8787;
+}
+.imputNews{
+  width: 9em;
+}
+.newForm{
+  width: 9em !important;
+  background-color: white;
+  border-bottom:solid 1px #7D8787;
+  border-left:solid 1px #7D8787;
+  border-top:solid 1px #7D8787;
+}
