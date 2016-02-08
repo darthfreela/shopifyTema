@@ -231,7 +231,11 @@
               <!--Div Search -->
   <div id="divSearch">
     <ul>
-      <li><a href="#">{{ 'iconSearch.png' | asset_url | img_tag }}<span>Search</span></a></li>
+      <li>
+        <a href="#" id="svgsearch">{% include 'svg_icons' with 'search'%}
+          <span>Search</span>
+        </a>
+      </li>
     </ul>
   </div>
               <!-- begin site-nav -->
@@ -316,8 +320,8 @@
                 <li><a href="#">My Account</a></li>
                 <li class="site-nav__item" id="cart">
                   <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-right" aria-controls="CartDrawer">
-                    <span class="icon-fallback-text">
-                     {{ 'basket.png' | asset_url | img_tag }}
+                    <span class="icon-fallback-text" >
+                     {% include 'svg_icons' with 'cart' %}
                       <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                     </span>
                     <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
@@ -327,10 +331,10 @@
               </div>
 
             <div class="grid__item large--hide one-quarter">
-              <div class="site-nav--mobile text-right">
+              <div class="site-nav--mobile text-right" id="cart">
                 <a href="/cart" class="site-nav__link cart-link js-drawer-open-right" aria-controls="CartDrawer">
                   <span class="icon-fallback-text">
-                   {{ 'basket.png' | asset_url | img_tag }}
+                   {% include 'svg_icons' with 'cart' %}
                     <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                   </span>
                   <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
@@ -600,6 +604,9 @@
                   <div class="note form-success">{{ 'general.newsletter_form.newsletter_confirmation' | t }}</div>
                 </div>
               {% else %}
+                <div id="newdiv">
+                  <span>Sing up receive our newslatter</span>
+                </div>
                 <label for="Email" class="newsletter__label hidden-label">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter--form">

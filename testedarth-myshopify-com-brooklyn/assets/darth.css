@@ -2,21 +2,51 @@
 
 /*=========================================================================HEADER*/
 h1{
-  font-family: 'Avenir Heavy' !important;
+  font-family: 'Avenir' !important;
  }
 
  h2{
   color:white;
   font-size: 1.75em;
-  font-family: 'Minion Pro Regular';
+  font-family: 'Minion Pro';
 
  }
+ .site-header{
+    height: 7em;
+ }
 
+ .slick-slider .slick-dots li{
+    margin: 0px 1.5em;
+ }
+
+ .slick-slider .slick-dots {
+    margin: 0px -1.5em;
+  }
+
+#cart>a>span>svg{
+  padding-right: 0;
+    height: auto;
+    width: 1em;
+}
+#cart>a>span>svg>path{
+  
+  fill:white;
+
+}
+
+#svgsearch>svg{
+  height: auto;
+  width: 1em;
+}
+
+#svgsearch>svg{
+  fill:white;
+}
  .linkscart{
  	position:relative;
  	width: 2%;
  	height: 1em;
- 	top: 0em;
+ 	top: 1.5em;
    left: 33em;
  }
 
@@ -24,7 +54,7 @@ h1{
   position:relative;
 	top: -10em;
 	margin-left: 6em;
-  width: 13em;
+  width: 15em;
 }
 
 .linkscart ul>li{
@@ -36,6 +66,7 @@ h1{
 .linkscart ul>li>a{
   position:relative;
   color: white;
+  font-family: 'Avenir';
 }
 
 #btnShop{
@@ -50,7 +81,7 @@ h1{
 #logo /*logo Darthfreela Team*/
 {
   position:relative;
-  top: -4em;
+  top: -3em;
   left: 43.5%;
 
 }
@@ -65,11 +96,10 @@ h1{
 }
 
 #AccessibleNav {
-    padding-top: 2em;
+    top: -2em;
     width: 100%;
-    align-content: center;
+    position: relative;
     margin-left: -19.5em;
-
 }
 
 #navMenuLarge{
@@ -89,10 +119,9 @@ h1{
 
 #divSearch{
   position: relative;
-  top:-2.8em;
-  left: -101em;
-  font-family: 'Avenir Book';
-
+  top: -2.7em;
+  left: -88em;
+  font-size: 1.1em;
 }
 
 #divSearch  ul>li{
@@ -105,8 +134,8 @@ h1{
 
 #divSearch ul>li>a>span{
   padding-left: 0.4em;
-  font-size: 1.2em;
-  font-family: 'Arapey';
+  font-size: 1.3em;
+  font-family: 'Avenir';
 }
 /*======================================================================FIM HEADER*/
 /*===================================INICIO LOGOMARCAS============================*/
@@ -121,12 +150,16 @@ h1{
 #divMarcas ul>li{
  display: inline-block;
 }
+#divMarcas ul{
+  margin: 0 0 15px 7.5em;
+}
 
 #divMarcas ul> li> a{
-     padding: 0px 3em;
+     padding: 0px 2em;
 }
 /*=======================================================================FIM MARCAS*/
 /*==================================INICIO PRODUTOS HOME===========================*/
+
 /*div principal*/
 .homeProduct{
   position: relative;
@@ -234,6 +267,9 @@ h1{
   border-right: solid 0.5em white;
   border-top: solid 1em white;
 }
+
+
+
 #product3>a>img:hover{
   background-color: rgba(107, 117, 123, 0.8);
     position: absolute;
@@ -362,6 +398,7 @@ background-color: rgba(107, 117, 123, 0.8);
     height: 1367px;
 }
 
+
 /*=======================================================================FIM PRODUTOS HOME*/
 /*==================================INICIO OUR BRAND===============================*/
 .fundo {
@@ -383,7 +420,7 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 .hrHome{
-  border: solid 0.5px #424750;;
+  border: solid 0.5px rgba(125, 135, 135, 0.18);
 }
 
 .formataTxt{
@@ -401,7 +438,7 @@ background-color: rgba(107, 117, 123, 0.8);
   position: relative;
   height: 9em;
   width: 100%;
-  top: 1em;
+  top: 2em;
   left: 0;
 }
 
@@ -430,7 +467,7 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 #img1>img{
-  width:43em;
+  width:43.09em;
 }
 
 #img2{
@@ -441,7 +478,7 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 #img2>img{
-  width:43em;
+  width:43.095em;
 }
 /*===============================footer=================================*/
 .darthFooter{
@@ -457,7 +494,7 @@ background-color: rgba(107, 117, 123, 0.8);
   position: absolute;
   top: 32%;
   left: 69%;
-  width: 19em;
+  width: 17em;
   height: 5em;
 }
 
@@ -471,8 +508,8 @@ background-color: rgba(107, 117, 123, 0.8);
 
 .social>span{
   position: relative;
-  top: 0;
-  left: 4em;
+  top: -20px;
+  left: 3.5em;
 }
 
 .social>div>ul>li{
@@ -482,7 +519,7 @@ background-color: rgba(107, 117, 123, 0.8);
 #linksCop{
   position: absolute;
   top: 53%;
-  left: 73%;
+  left: 72%;
   width: 14em;
   height: 1em;
 }
@@ -490,7 +527,7 @@ background-color: rgba(107, 117, 123, 0.8);
 #linksCop>a>span{
   color:#6b757b;
   font-size:0.75em;
-  font-style: 'Avenir Book';
+  font-family: 'AvenirBook';
 }
 
 /*=============First Column*/
@@ -571,7 +608,7 @@ background-color: rgba(107, 117, 123, 0.8);
   width: 62em;
   top: 0;
   left: 0;
-  border: solid 0.5px #7D8787;
+  border: solid 0.5px rgba(125, 135, 135, 0.18);
 }
 
 .newsletterdarth{
@@ -605,4 +642,61 @@ background-color: rgba(107, 117, 123, 0.8);
   border-bottom:solid 1px #7D8787;
   border-left:solid 1px #7D8787;
   border-top:solid 1px #7D8787;
+}
+
+#newdiv{
+  position: absolute;
+  top: -4em;
+  left: 0;
+  width: 13em;
+  height: 0;
+}
+
+#newdiv > span{
+  font-size:1em;
+  font-family:'MinionPro';
+  font-weight: bolder;
+  color: #4c4d4e;
+}
+
+.newsletter--form{
+  margin-top:-2em;
+}
+/*Scroll menu*/
+.scrolled_menu {
+    /*Regras fixas*/
+    height: 7em !important;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+ 
+    /*Customizações*/
+    background-color: white !important;
+    display: none;
+
+}
+
+/*zoom*/
+ .hoverzoom {
+  overflow: hidden;
+}
+
+.hoverzoom >a> img {
+   width: 100%; 
+  border-radius: 2px;
+  -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+      -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+       -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+        -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+           transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+
+.hoverzoom:hover > a > img {
+  -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+       -o-transform: scale(1.5);
+          transform: scale(1.5);
 }

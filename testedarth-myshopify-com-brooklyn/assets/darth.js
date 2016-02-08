@@ -66,4 +66,60 @@ $(document).ready(function(){
 	$('#product5').mouseleave(function(){
 		$('#divProduct5').css('display', 'none');
 	});
+
+	//SCROLL MENU
+	//Elemento que vai receber os eventos.
+    var nav = $('.site-header');
+ 	var hide = false;
+    //Ao rolar a página, a função será executada.
+    $(window).scroll(function () {
+        //Se o tamanho da parte rolada for maior que 136px (pixels) ->
+        if ($(this).scrollTop() > 750) {
+            nav.addClass("scrolled_menu"); //Aplica a classe scrolled_menu no elemento .menu
+            if(hide == false){
+            	$('.scrolled_menu').hide();
+            	hide = true;
+        	}
+            $('.scrolled_menu').slideDown(500);
+            //////////////////////////////////////////////////////////////////////////////////
+            //=========================MUDANÇA DA COR DOS LINKS E IMAGENS================// //
+            //////////////////////////////////////////////////////////////////////////////////
+            //link do cart
+            $('.linkscart ul>li>a').css('color', 'black');
+            $('#cart>a>span>svg>path').css('fill', 'black' );
+           	$('#AccessibleNav>li>a').css('color', 'black');
+           	$('#svgsearch>svg').css('fill', 'black' );
+           	$('#divSearch ul>li>a').css('color', 'black');
+
+        } else {
+        	$('.linkscart ul>li>a').css('color', 'white');
+            $('#cart>a>span>svg>path').css('fill', 'white' );
+           	$('#AccessibleNav>li>a').css('color', 'white');
+           	$('#svgsearch>svg').css('fill', 'white' );
+           	$('#divSearch ul>li>a').css('color', 'white');
+            nav.removeClass("scrolled_menu"); //Remove a classe scrolled_menu no elemento .menu
+            hide = false;
+        }
+    });
+
+	//ESCUREÇER LINKS COM MOUSE MENU
+	$('.site-header').mouseover(function(){
+		$(this).css('background-color', 'white');
+		$('.linkscart ul>li>a').css('color', 'black');
+        $('#cart>a>span>svg>path').css('fill', 'black' );
+        $('#AccessibleNav>li>a').css('color', 'black');
+        $('#svgsearch>svg').css('fill', 'black' );
+        $('#divSearch ul>li>a').css('color', 'black');
+
+	});
+	$('.site-header').mouseleave(function(){
+		$(this).css('background-color', 'transparent');
+		$('.linkscart ul>li>a').css('color', 'white');
+        $('#cart>a>span>svg>path').css('fill', 'white' );
+        $('#AccessibleNav>li>a').css('color', 'white');
+        $('#svgsearch>svg').css('fill', 'white' );
+        $('#divSearch ul>li>a').css('color', 'white');
+		
+	});
+	
 });

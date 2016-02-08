@@ -1769,10 +1769,12 @@ $shareCountBg: $colorBody;
 .slick-slider .slick-dots {
   margin: 0;
   bottom: 10px;
+  ul{
+  list-style-type:square;
+  }
 
   li {
     margin: 0;
-    list-style-type:square;
     vertical-align: middle;
 
     button {
@@ -1781,22 +1783,21 @@ $shareCountBg: $colorBody;
 
     button:before {
       text-indent: -9999px;
-      background-color: #fff;
-      border-radius: 100%;
-      border: 2px solid transparent;
-      width: 10px;
-      height: 10px;
+      background-color: rgba(255, 255, 255, 0.53);
+      border-color: rgba(255, 255, 255, 0.53);
+      width: 10em;
+      height: 1em;
       margin: 5px 0 0 5px;
       opacity: 1;
-      @include transition(all 0.2s);
+      
     }
 
     &.slick-active button:before {
-      background-color: transparent;
-      border-color: #fff;
+      background-color: #fff;
+      border: 2px solid #fff;
+      width: 10em;
+      height: 1em;
       opacity: 1;
-      width: 12px;
-      height: 12px;
       margin: 4px 0 0 4px;
     }
 
@@ -2445,7 +2446,8 @@ $slick-opacity-not-active: 0.25;
   @include transition('color 0.2s, opacity 0.1s');
   @include accentFontStack;
   font-size: em(14px);
-  font-family: 'MinionPro-Bold';
+  font-family: 'Minion Pro';
+  font-weight: bolder;
 
   .is-light & {
     color: #fff;
