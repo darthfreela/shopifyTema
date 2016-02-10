@@ -140,17 +140,13 @@
               
               </div>
               <hr class="hr--cart" >
-
-            <div class="whitebox">
-              <div id="img"> Imagem do carrinho</div>
-              <div id="txt"><span>Lalalalalalallala ohohohohou</span></div>
-              <input type="text" placeholder="Add a message..." />
-              <div class="pricebutton">
-                <div id="price"><span>R$ 20.00</span></div>
-                <div id="pricebutton"><button>ADD</button></div>
-              </div>
-        
-            </div>
+               <div class="botaorodape2">
+        <input type="submit" name="update" class="btn--secondary update-cart" value="{{ 'cart.general.update' | t }}">
+        <button type="submit" name="checkout" class="btn cart__checkout">
+           {{ 'cart.general.checkout' | t }} <span class="icon icon-arrow-right" aria-hidden="true"></span>
+        </button>
+      </div>
+            
 
               <p><em>{{ 'cart.general.shipping_at_checkout' | t }}</em></p>
               

@@ -854,6 +854,9 @@ background-color: rgba(107, 117, 123, 0.8);
 .update-cart+.cart__checkout{
   background-color: #7FC7C3 !important;
 }
-.btn--secondary, .rte .btn--secondary {
-    
+.botaorodape2{
+  position: relative;
+  top: 0em;
+  left: 0em;
+  width: 27em;
 }
