@@ -102,8 +102,24 @@ $(document).ready(function(){
         }
     });
 
+	//VERIFICAR QUAL PÁGINA É E ADICIONAR O HEADER
+	// PEGANDO O NOME DO DOCUMENTO OU PÁGINA ATUAL
+	documento = window.location.pathname;
+ 
+	if(documento=="/") {
+		$('.site-header').addClass('bgmenu');
+		//adicionar o popup aqui
+	}else{
+		$('.site-header').removeClass('bgmenu');
+		$('.linkscart ul>li>a').css('color', 'black');
+        $('#cart>a>span>svg>path').css('fill', 'black' );
+        $('#AccessibleNav>li>a').css('color', 'black');
+        $('#svgsearch>svg').css('fill', 'black' );
+        $('#divSearch ul>li>a').css('color', 'black');
+	}
+	
 	//ESCUREÇER LINKS COM MOUSE MENU
-	$('.site-header').mouseover(function(){
+	$('.bgmenu').mouseover(function(){
 		$(this).css('background-color', 'white');
 		$('.linkscart ul>li>a').css('color', 'black');
         $('#cart>a>span>svg>path').css('fill', 'black' );
@@ -112,7 +128,7 @@ $(document).ready(function(){
         $('#divSearch ul>li>a').css('color', 'black');
 
 	});
-	$('.site-header').mouseleave(function(){
+	$('.bgmenu').mouseleave(function(){
 		$(this).css('background-color', 'transparent');
 		$('.linkscart ul>li>a').css('color', 'white');
         $('#cart>a>span>svg>path').css('fill', 'white' );
@@ -121,5 +137,6 @@ $(document).ready(function(){
         $('#divSearch ul>li>a').css('color', 'white');
 		
 	});
+	
 	
 });

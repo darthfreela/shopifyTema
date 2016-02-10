@@ -6,30 +6,32 @@
     - Shopify Payments - http://docs.shopify.com/manual/more/shopify-payments/testing-shopify-payments
 
 {% endcomment %}
-<div class="grid">
+<div class="gridCart">
   <div class="grid__item large--five-sixths push--large--one-twelfth">
     {% if cart.item_count > 0 %}
+      <div class="botaorodape">
+        <input type="submit" name="update" class="btn--secondary update-cart" value="{{ 'cart.general.update' | t }}">
+        <button type="submit" name="checkout" class="btn cart__checkout">
+           {{ 'cart.general.checkout' | t }} <span class="icon icon-arrow-right" aria-hidden="true"></span>
+        </button>
+      </div>
       <header class="section-header text-center">
-        <h1 class="text-center">{{ 'cart.general.title' | t }}</h1>
-        <hr class="hr--small">
+        <h1 class="titlecart">{{ 'cart.general.title' | t }}</h1>
+        <div id="divUlHeader">
+          <ul id="ulheader">
+            <li id="itemli">Item</li>
+            <li id="sizeli">Size</li>
+            <li id="quantityli">Quantity</li>
+            <li id="priceli">Price</li>
+            <li id="totalpriceli">Total Price</li>
+          </ul>
+        </div> 
+       
       </header>
 
       <form action="/cart" method="post" novalidate class="cart">
 
-        <div class="cart__row medium-down--hide cart__header-labels">
-          <div class="grid--full">
-            <div class="grid__item large--two-fifths push--large--three-fifths">
-              <div class="grid--full">
-                <div class="grid__item one-third medium-down--half text-center">
-                  {{ 'cart.label.quantity' | t }}
-                </div>
-                <div class="grid__item two-thirds medium-down--half text-right">
-                  {{ 'cart.label.total' | t }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {% comment %}
           Loop through products in the cart
@@ -41,7 +43,7 @@
               <div class="grid__item large--three-fifths">
                 <div class="grid">
 
-                  <div class="grid__item one-third">
+                  <div class="grid__item one-third itemcart">
                     <a href="{{ item.url | within: collections.all }}" class="cart__image">
 
                       {% comment %}
@@ -83,11 +85,7 @@
                       {% endfor %}
                     {% endif %}
 
-                    <p class="cart__product-meta">
-                      <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
-                        {{ 'cart.general.remove' | t }}
-                      </a>
-                    </p>
+                    
                   </div>
 
                 </div>
@@ -96,13 +94,20 @@
               <div class="grid__item large--two-fifths">
                 <div class="grid--full cart__row--table">
 
-                  <div class="grid__item one-third text-center">
+                  <div class="grid__item one-third text-center qtdcart">
                     <input type="number" name="updates[]" id="updates_{{ item.id }}" class="cart__product-qty" value="{{ item.quantity }}" min="0">
                   </div>
 
-                  <div class="grid__item two-thirds text-right">
+                  <div class="grid__item two-thirds text-right cartprice">
                     <span class="cart__price">{{ item.line_price | money }}</span>
                   </div>
+                    <div class="removecart">
+              <p class="cart__product-meta">
+                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
+                  {{ 'cart.general.remove' | t }}
+                </a>
+              </p>
+            </div>
 
                 </div>
               </div>
@@ -128,18 +133,27 @@
             {% endif %}
             <div class="grid__item large--two-fifths text-center large--text-right{% unless settings.cart_notes_enable %} push--large--three-fifths{% endunless %}">
               <div class="grid--full cart__row--table">
-                <div class="grid__item one-half large--one-third large--text-center">
-                  <p class="cart__subtotal">{{ 'cart.general.subtotal' | t }}</p>
-                </div>
-                <div class="grid__item one-half large--two-thirds">
+                
+                <div class="grid__item one-half large--two-thirds subtotalcart">
                   <p class="cart__subtotal">{{ cart.total_price | money }}</p>
                 </div>
+              
               </div>
+              <hr class="hr--cart" >
+
+            <div class="whitebox">
+              <div id="img"> Imagem do carrinho</div>
+              <div id="txt"><span>Lalalalalalallala ohohohohou</span></div>
+              <input type="text" placeholder="Add a message..." />
+              <div class="pricebutton">
+                <div id="price"><span>R$ 20.00</span></div>
+                <div id="pricebutton"><button>ADD</button></div>
+              </div>
+        
+            </div>
+
               <p><em>{{ 'cart.general.shipping_at_checkout' | t }}</em></p>
-              <input type="submit" name="update" class="btn--secondary update-cart" value="{{ 'cart.general.update' | t }}">
-              <button type="submit" name="checkout" class="btn cart__checkout">
-                {{ 'cart.general.checkout' | t }} <span class="icon icon-arrow-right" aria-hidden="true"></span>
-              </button>
+              
 
               {% if additional_checkout_buttons %}
                 <div class="additional_checkout_buttons">{{ content_for_additional_checkout_buttons }}</div>
@@ -148,7 +162,7 @@
           </div>
 
         </div>
-
+        
       </form>
 
     {% else %}

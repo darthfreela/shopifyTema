@@ -1871,7 +1871,7 @@ $socialIconFontStack: 'icons';
 
   input[type="text"] {
     display: block;
-    background: none;
+    background: white;
     text-align: center;
     width: 100%;
     padding: 5px 25px;
@@ -1900,22 +1900,22 @@ $socialIconFontStack: 'icons';
   }
 
   &:hover {
-    background-color: $colorDrawerBorder;
+    background-color: none !important;
   }
 
   &:active {
-    background-color: darken($colorDrawerBorder, 10%);
+    background-color: none !important;
   }
 }
 
 .js-qty__adjust--plus {
   right: 0;
-  border-left: 1px solid $colorDrawerBorder;
+  border-left: 1px solid white;
 }
 
 .js-qty__adjust--minus {
   left: 0;
-  border-right: 1px solid $colorDrawerBorder;
+  border-right: 1px solid white;
 }
 
 /*================ Quantity Selectors in Ajax Cart ================*/
@@ -1939,12 +1939,12 @@ $socialIconFontStack: 'icons';
   color: $colorDrawerText;
 
   &:hover {
-    background-color: $colorDrawerBorder;
+    background-color: white;
     color: color-control($colorDrawerBorder);
   }
 
   &:active {
-    background-color: darken($colorDrawerBorder, 10%);
+    background-color: white;
     color: color-control($colorDrawerBorder);
   }
 }
@@ -1952,6 +1952,8 @@ $socialIconFontStack: 'icons';
 .ajaxcart__qty--plus {
   @extend .js-qty__adjust--plus;
   border-color: $colorDrawerBorder;
+  background: white;
+  font-size:1em;
 }
 
 .ajaxcart__qty--minus {
@@ -1976,7 +1978,7 @@ $socialIconFontStack: 'icons';
     color: $colorTextBody;
 
     &:active {
-      color: darken($colorTextBody, 20%);
+      color: none;
     }
   }
 }
