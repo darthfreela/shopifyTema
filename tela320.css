@@ -1,0 +1,414 @@
+/* Portrait */
+@media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.site-nav--mobile {
+		margin-left: 16em;
+	}
+	
+    #logo {
+        top: 0em;
+		left: -7.5%;
+    }
+	#cart {
+		display: none;
+	}
+    #divMarcas ul {
+        margin: 0px 0 15px 1em;
+    }
+
+        #divMarcas ul li{
+            width: 12%;
+        }
+
+            #divMarcas ul li a {
+                padding: 0px 0.3em;
+            }
+
+                #divMarcas ul li a img {
+                    max-width: 100%;
+                    height: 1.6em;
+                }
+
+    #divMarcas2 {
+        display:none;
+    }
+
+        #divMarcas2 ul li a img {
+            max-width: 100%;
+            height: 1.6em;
+        }
+
+    .homeProduct {
+        position: absolute;
+        top: 38.9em;
+        height: 61.5em;
+    }
+
+    #product1 {
+        position: absolute;
+        height: 10.5em;
+        width: 100%;
+    }
+
+    #divProduct1 {
+		top: 2em;
+		left: 21%;
+    }
+		#divProduct1 .hrProduct {
+			margin-left: 3.8em;
+			top: -12px;
+		}
+
+    #imgProduct1 img {
+        width: 100%;
+        top: -4.5em;
+    }
+
+    #product2 {
+        position: absolute;
+        width: 100%;
+        height: 10.5em;
+        top: 11em;
+    }
+
+    #divProduct2 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+        #divProduct2 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct2 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+
+    #imgProduct2 img {
+        width: 100%;
+        height: 13em;
+    }
+
+    #product3 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 21.9em;
+		border-top: 0px;
+    }
+	#divProduct3 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+		#divProduct3 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct3 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct3 img {
+        width: 100%;
+		height: 10em;
+    }
+
+    #product4 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 32.5em;
+		border-top: 0px;
+    }
+	#divProduct4 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+	#divProduct4 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct4 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct4 img {
+        width: 100%;
+    }
+
+    #product5 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 43.5em;
+		border-top: 0px;;
+    }
+	#divProduct5 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+	#divProduct5 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct5 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct5 img {
+        width: 100%;
+    }
+	.fundo {
+		top: 8em;
+	}
+	#gridItemTop div .h1Home{
+		margin-bottom: 1em;
+	}
+	#gridItemTop div .formataTxt{
+		padding: 0 1em;
+		margin-left: 0;
+		width: 100%;
+	}
+	.grid .imgFooter {
+		top: 3em;
+	}
+		.grid .imgFooter #img2 {
+			top: -0.48em;
+		}
+	.darthFooter {
+		top: -0.3em;
+		height: 10em;
+	}
+	#linksFotter{
+		display:none;
+	}
+	.newsletterdarth {
+		left: 4em;
+	}
+	.social {
+		top: 8.4em;
+		left: -1.5em;
+	}
+	.social div {
+		top: -1.5em;
+		left: 2.5em;
+	}
+	#linksCop {
+		top: 12em;
+		left: 3em;
+	}
+}
+
+/*Landscape*/
+@media only screen and (device-width: 568px) and (device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	.site-nav--mobile {
+		margin-left: 31em;
+	}
+    #logo {
+        top: 0;
+		left: 0;
+    }
+	#cart {
+		display: none;
+	}
+    #divMarcas ul {
+        margin: 0px 0 15px 1em;
+    }
+
+        #divMarcas ul li{
+            width: 12%;
+        }
+
+            #divMarcas ul li a {
+                padding: 0px 0.3em;
+            }
+
+                #divMarcas ul li a img {
+                    max-width: 100%;
+                    height: 1.6em;
+                }
+
+    #divMarcas2 {
+        display:none;
+    }
+
+        #divMarcas2 ul li a img {
+            max-width: 100%;
+            height: 1.6em;
+        }
+
+    .homeProduct {
+        position: absolute;
+        top: 38.9em;
+        height: 61.5em;
+    }
+
+    #product1 {
+        position: absolute;
+        height: 10.5em;
+        width: 100%;
+    }
+
+    #divProduct1 {
+		top: 2em;
+		left: 21%;
+    }
+		#divProduct1 .hrProduct {
+			margin-left: 3.8em;
+			top: -12px;
+		}
+
+    #imgProduct1 img {
+        width: 100%;
+        top: -4.5em;
+    }
+
+    #product2 {
+        position: absolute;
+        width: 100%;
+        height: 10.5em;
+        top: 11em;
+    }
+
+    #divProduct2 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+        #divProduct2 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct2 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+
+    #imgProduct2 img {
+        width: 100%;
+        height: 13em;
+    }
+
+    #product3 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 21.9em;
+		border-top: 0px;
+    }
+	#divProduct3 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+		#divProduct3 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct3 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct3 img {
+        width: 100%;
+		height: 10em;
+    }
+
+    #product4 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 32.5em;
+		border-top: 0px;
+    }
+	#divProduct4 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+	#divProduct4 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct4 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct4 img {
+        width: 100%;
+    }
+
+    #product5 {
+        position: absolute;
+        width: 100%;
+		height: 10.5em;
+        top: 43.5em;
+		border-top: 0px;;
+    }
+	#divProduct5 {
+        top: 2em;
+        left: 25%;
+		text-align: justify;
+    }
+	#divProduct5 .hrProduct {
+            margin-left: 3em;
+        }
+
+        #divProduct5 .btnProduct {
+            position: relative;
+            left: 0.3em;
+            padding-left: 7px;
+        }
+    #imgProduct5 img {
+        width: 100%;
+    }
+	.fundo {
+		top: 8em;
+	}
+	#gridItemTop div .h1Home{
+		margin-bottom: 1em;
+	}
+	#gridItemTop div .formataTxt{
+		padding: 0 1em;
+		margin-left: 0;
+		width: 100%;
+	}
+	.grid .imgFooter {
+		top: 3em;
+	}
+		.grid .imgFooter #img2 {
+			top: -0.48em;
+		}
+	.darthFooter {
+		    top: 1em;
+    height: 10em;
+	}
+	#linksFotter{
+		display:none;
+	}
+	.newsletterdarth {
+		left: 11em;
+	}
+	.social {
+		top: 8.4em;
+		left:  5.2em;
+	}
+	.social div {
+		top: -1.5em;
+		left: 2.5em;
+	}
+	#linksCop {
+		top: 12em;
+		left: 10.5em;
+	}
+}
