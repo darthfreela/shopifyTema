@@ -76,6 +76,7 @@ $(document).ready(function(){
         //Se o tamanho da parte rolada for maior que 136px (pixels) ->
         if ($(this).scrollTop() > 750) {
             nav.addClass("scrolled_menu"); //Aplica a classe scrolled_menu no elemento .menu
+            $('.bgmenu').off();
             if(hide == false){
             	$('.scrolled_menu').hide();
             	hide = true;
@@ -85,6 +86,8 @@ $(document).ready(function(){
             //=========================MUDANÇA DA COR DOS LINKS E IMAGENS================// //
             //////////////////////////////////////////////////////////////////////////////////
             //link do cart
+            $('#logoa').css('display', 'none');
+			$('#logob').css('display', 'inline');
             $('.linkscart ul>li>a').css('color', 'black');
             $('#cart>a>span>svg>path').css('fill', 'black' );
            	$('#AccessibleNav>li>a').css('color', 'black');
@@ -92,12 +95,37 @@ $(document).ready(function(){
            	$('#divSearch ul>li>a').css('color', 'black');
 
         } else {
+        	$('#logoa').css('display', 'inline');
+			$('#logob').css('display', 'none');
         	$('.linkscart ul>li>a').css('color', 'white');
             $('#cart>a>span>svg>path').css('fill', 'white' );
            	$('#AccessibleNav>li>a').css('color', 'white');
            	$('#svgsearch>svg').css('fill', 'white' );
            	$('#divSearch ul>li>a').css('color', 'white');
             nav.removeClass("scrolled_menu"); //Remove a classe scrolled_menu no elemento .menu
+            //ESCUREÇER LINKS COM MOUSE MENU
+		$('.bgmenu').on('mouseover' ,function(){
+			$('#logoa').css('display', 'none');
+			$('#logob').css('display', 'inline');
+			$(this).css('background-color', 'white');
+			$('.linkscart ul>li>a').css('color', 'black');
+	        $('#cart>a>span>svg>path').css('fill', 'black' );
+	        $('#AccessibleNav>li>a').css('color', 'black');
+	        $('#svgsearch>svg').css('fill', 'black' );
+	        $('#divSearch ul>li>a').css('color', 'black');
+
+		});
+		$('.bgmenu').on('mouseleave', function(){
+			$('#logoa').css('display', 'inline');
+			$('#logob').css('display', 'none');
+			$(this).css('background-color', 'transparent');
+			$('.linkscart ul>li>a').css('color', 'white');
+	        $('#cart>a>span>svg>path').css('fill', 'white' );
+	        $('#AccessibleNav>li>a').css('color', 'white');
+	        $('#svgsearch>svg').css('fill', 'white' );
+	        $('#divSearch ul>li>a').css('color', 'white');
+			
+		});
             hide = false;
         }
     });
@@ -119,24 +147,28 @@ $(document).ready(function(){
 	}
 	
 	//ESCUREÇER LINKS COM MOUSE MENU
-	$('.bgmenu').mouseover(function(){
-		$(this).css('background-color', 'white');
-		$('.linkscart ul>li>a').css('color', 'black');
-        $('#cart>a>span>svg>path').css('fill', 'black' );
-        $('#AccessibleNav>li>a').css('color', 'black');
-        $('#svgsearch>svg').css('fill', 'black' );
-        $('#divSearch ul>li>a').css('color', 'black');
+		$('.bgmenu').on('mouseover' ,function(){
+			$('#logoa').css('display', 'none');
+			$('#logob').css('display', 'inline');
+			$(this).css('background-color', 'white');
+			$('.linkscart ul>li>a').css('color', 'black');
+	        $('#cart>a>span>svg>path').css('fill', 'black' );
+	        $('#AccessibleNav>li>a').css('color', 'black');
+	        $('#svgsearch>svg').css('fill', 'black' );
+	        $('#divSearch ul>li>a').css('color', 'black');
 
-	});
-	$('.bgmenu').mouseleave(function(){
-		$(this).css('background-color', 'transparent');
-		$('.linkscart ul>li>a').css('color', 'white');
-        $('#cart>a>span>svg>path').css('fill', 'white' );
-        $('#AccessibleNav>li>a').css('color', 'white');
-        $('#svgsearch>svg').css('fill', 'white' );
-        $('#divSearch ul>li>a').css('color', 'white');
-		
-	});
+		});
+		$('.bgmenu').on('mouseleave', function(){
+			$('#logoa').css('display', 'inline');
+			$('#logob').css('display', 'none');
+			$(this).css('background-color', 'transparent');
+			$('.linkscart ul>li>a').css('color', 'white');
+	        $('#cart>a>span>svg>path').css('fill', 'white' );
+	        $('#AccessibleNav>li>a').css('color', 'white');
+	        $('#svgsearch>svg').css('fill', 'white' );
+	        $('#divSearch ul>li>a').css('color', 'white');
+			
+		});
 	
 	
 });

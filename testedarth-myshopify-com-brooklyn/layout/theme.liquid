@@ -183,7 +183,7 @@
   <div id="PageContainer" class="is-moved-by-drawer">
   
     <div class="header-wrapper{% unless hero_full_height %} header-wrapper--over-hero{% endunless %}">
-      <header class="site-header bgmenu" role="banner">
+      <header class="site-header" role="banner">
         <div class="wrapper" id='navMenuLarge'>
           <div class="grid--full grid--table">
             <div class="grid__item large--hide one-quarter">
@@ -210,7 +210,8 @@
                   {% endcomment %}
                   {% assign logo_inverted_url = 'logo-inverted.png' | asset_url %}
                   <a href="/" itemprop="url" class="site-header__logo-link{% if settings.logo_use_inverted %} logo--has-inverted{% endif %}">
-                    <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                    <img id="logoa" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                    <img id="logob" src="{{ 'logo_black.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
                   </a>
                   {% if settings.logo_use_inverted %}
                     <a href="/" itemprop="url" class="logo--inverted">
@@ -329,7 +330,6 @@
                      {% include 'svg_icons' with 'cart' %}
                       <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
                     </span>
-                    <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
                   </a>
                 </li>
                </ul> 

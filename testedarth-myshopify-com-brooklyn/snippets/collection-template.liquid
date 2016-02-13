@@ -4,77 +4,87 @@
 
 {% paginate collection.products by 12 %}
 
-<header class="section-header text-center">
-  <h1>{{ collection.title }}</h1>
-  <hr class="hr--small">
-  {% if collection.description != blank %}
-    <div class="grid">
-      <div class="grid__item">
-        <div class="rte">
-          {{ collection.description }}
+<header id="headercollection" class="section-header text-center">
+  <div id="topo">
+    <h1>{{ collection.title }}</h1>
+    <hr class="hr--small">
+    {% if collection.description != blank %}
+      <div class="grid">
+        <div class="grid__item">
+          <div class="rte">
+            {{ collection.description }}
+          </div>
         </div>
       </div>
-    </div>
-  {% endif %}
-
-  {% if settings.collection_tags_enable %}
-    {% if collection.all_tags.size > 0 %}
-      {% comment %}
-        To provide a 'catch-all' link at the top of the list,
-        check against the collection.handle, product type, and vendor.
-      {% endcomment %}
-      <ul class="tags tags--collection inline-list">
-        <li{% unless current_tags %} class="tag--active"{% endunless %}>
-          {% comment %}
-            Good for /collections/all collection and regular collections
-          {% endcomment %}
-          {% if collection.handle %}
-            <a href="/collections/{{ collection.handle }}">
-              {{ 'collections.general.all_of_collection' | t }}
-            </a>
-
-          {% comment %}
-            Good for automatic type collections
-          {% endcomment %}
-          {% elsif collection.current_type %}
-            <a href="{{ collection.current_type | url_for_type }}">
-              {{ 'collections.general.all_of_collection' | t }}
-            </a>
-
-          {% comment %}
-            Good for automatic vendor collections
-          {% endcomment %}
-          {% elsif collection.current_vendor %}
-            <a href="{{ collection.current_vendor | url_for_vendor }}">
-              {{ 'collections.general.all_of_collection' | t }}
-            </a>
-          {% endif %}
-        </li>
-
-        {% for tag in collection.all_tags %}
-          {% if current_tags contains tag %}
-            <li class="tag--active">
-              {{ tag | link_to_remove_tag: tag }}
-            </li>
-          {% else %}
-            <li>
-              {% comment %}
-                Use link_to_add_tag if you want to allow filtering
-                by multiple tags
-              {% endcomment %}
-              {{ tag | link_to_tag: tag }}
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
     {% endif %}
-  {% endif %}
+    
 
-  {% if settings.collection_tags_enable %}
-    <hr class="hr--small hr--clear">
-  {% endif %}
+    {% if settings.collection_tags_enable %}
+      {% if collection.all_tags.size > 0 %}
+        {% comment %}
+          To provide a 'catch-all' link at the top of the list,
+          check against the collection.handle, product type, and vendor.
+        {% endcomment %}
+        <ul class="tags tags--collection inline-list">
+          <li{% unless current_tags %} class="tag--active"{% endunless %}>
+            {% comment %}
+              Good for /collections/all collection and regular collections
+            {% endcomment %}
+            {% if collection.handle %}
+              <a href="/collections/{{ collection.handle }}">
+                {{ 'collections.general.all_of_collection' | t }}
+              </a>
+
+            {% comment %}
+              Good for automatic type collections
+            {% endcomment %}
+            {% elsif collection.current_type %}
+              <a href="{{ collection.current_type | url_for_type }}">
+                {{ 'collections.general.all_of_collection' | t }}
+              </a>
+
+            {% comment %}
+              Good for automatic vendor collections
+            {% endcomment %}
+            {% elsif collection.current_vendor %}
+              <a href="{{ collection.current_vendor | url_for_vendor }}">
+                {{ 'collections.general.all_of_collection' | t }}
+              </a>
+            {% endif %}
+          </li>
+
+          {% for tag in collection.all_tags %}
+            {% if current_tags contains tag %}
+              <li class="tag--active">
+                {{ tag | link_to_remove_tag: tag }}
+              </li>
+            {% else %}
+              <li>
+                {% comment %}
+                  Use link_to_add_tag if you want to allow filtering
+                  by multiple tags
+                {% endcomment %}
+                {{ tag | link_to_tag: tag }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+
+    {% if settings.collection_tags_enable %}
+      <hr class="hr--small hr--clear">
+    {% endif %}
+  </div>  
 </header>
+<div class="bgcollection">
+     {% if collection.image %}
+  <img src="{{ collection | img_url: 'Large' }}"  alt="{{ collection.title | escape }}"/>
+{% else %}
+<img src="{{ collection.products.first }}"  alt="{{ collection.title | escape }}" />
+{% endif %}
 
+  </div>
 {% if settings.collection_products_grid == 'collage' %}
   <div class="grid grid-collage">
     {% comment %}

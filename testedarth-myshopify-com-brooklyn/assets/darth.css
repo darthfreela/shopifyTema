@@ -11,6 +11,14 @@ h1{
   font-family: 'Minion Pro';
 
  }
+
+ body{
+  font-family: "Avenir Book";
+ }
+
+ #logob{
+  display:none;
+ }
  .site-header{
     height: 7em;
  }
@@ -47,7 +55,7 @@ h1{
  	width: 2%;
  	height: 1em;
  	top: 1.5em;
-   left: 33em;
+  left: 33em;
  }
 
 .linkscart ul {
@@ -67,6 +75,7 @@ h1{
   position:relative;
   color: white;
   font-family: 'Avenir';
+  font-size: 1em;
 }
 
 #btnShop{
@@ -91,15 +100,17 @@ h1{
    padding-top:3em;
    float:left;
    width: 100%;
-   font-size:0.750em !important;
    margin-top: 0px;
+   font-weight: bolder;
+   font-size: 0.9em !important;
+   font-family: 'Minion Pro'
 }
 
 #AccessibleNav {
     top: -2em;
     width: 100%;
     position: relative;
-    margin-left: -19.5em;
+    margin-left: -21em;
 }
 
 #navMenuLarge{
@@ -119,9 +130,8 @@ h1{
 
 #divSearch{
   position: relative;
-  top: -2.7em;
-  left: -88em;
-  font-size: 1.1em;
+  top: -2.4em;
+  left: -79em;
 }
 
 #divSearch  ul>li{
@@ -134,7 +144,7 @@ h1{
 
 #divSearch ul>li>a>span{
   padding-left: 0.4em;
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: 'Avenir';
 }
 /*======================================================================FIM HEADER*/
@@ -500,7 +510,7 @@ background-color: rgba(107, 117, 123, 0.8);
 
 .social>div{
   position: relative;
-  top: 0px;
+  top: -16px;
   left: 0;
   width: 18em;
   height: 4em;
@@ -518,8 +528,8 @@ background-color: rgba(107, 117, 123, 0.8);
 /*===========Links Cop*/
 #linksCop{
   position: absolute;
-  top: 53%;
-  left: 72%;
+  top: 48%;
+  left: 72.8%;
   width: 14em;
   height: 1em;
 }
@@ -542,7 +552,7 @@ background-color: rgba(107, 117, 123, 0.8);
   margin-left: 29%;
   color: #4c4d4e;
   font-size: 1em;
-  font-family: 'MinionPro';
+  font-family: 'Minio Pro';
   font-weight: bolder;
   padding-bottom: 0;
 }
@@ -554,7 +564,7 @@ background-color: rgba(107, 117, 123, 0.8);
 #colOne>div>ul>li>a{
   color: #4c4d4e;
   font-size: 0.75em;
-  font-family: 'MinionPro';
+  font-family: 'Minio Pro';
 }
 
 #colTwo{
@@ -568,7 +578,7 @@ background-color: rgba(107, 117, 123, 0.8);
   margin-left: 29%;
   color: #4c4d4e;
   font-size: 1em;
-  font-family: 'MinionPro';
+  font-family: 'Minion Pro';
   font-weight: bolder;
 }
 #colTwo>div{
@@ -577,7 +587,7 @@ background-color: rgba(107, 117, 123, 0.8);
 #colTwo>div>ul>li>a{
   color: #4c4d4e;
   font-size: 0.75em;
-  font-family: 'MinionPro';
+  font-family: 'Minion Pro';
 }
 
 #colThree{
@@ -591,7 +601,7 @@ background-color: rgba(107, 117, 123, 0.8);
   margin-left: 29%;
   color: #4c4d4e;
   font-size: 1em;
-  font-family: 'MinionPro';
+  font-family: 'Minion Pro';
   font-weight: bolder;
 }
 #colThree>div{
@@ -600,7 +610,7 @@ background-color: rgba(107, 117, 123, 0.8);
 #colThree>div>ul>li>a{
   color: #4c4d4e;
   font-size: 0.75em;
-  font-family: 'MinionPro';
+  font-family: 'Minion Pro';
 }
 
 #hrFooter{
@@ -654,7 +664,7 @@ background-color: rgba(107, 117, 123, 0.8);
 
 #newdiv > span{
   font-size:1em;
-  font-family:'MinionPro';
+  font-family:'Minion Pro';
   font-weight: bolder;
   color: #4c4d4e;
 }
@@ -719,7 +729,7 @@ background-color: rgba(107, 117, 123, 0.8);
   top: 0;
   margin-left: -41em;
   font-size: 1.5em;
-  font-family: 'MinionPro' !important;
+  font-family: 'Minion Pro' !important;
 }
 
 .hr--cart{
@@ -859,4 +869,24 @@ background-color: rgba(107, 117, 123, 0.8);
   top: 0em;
   left: 0em;
   width: 27em;
+}
+
+/*=======================BG COLLECTION*/
+
+#topo{
+  position: relative;
+  z-index: 2;
+}
+
+.bgcollection{
+  position: absolute;
+  top: 17em;
+  left: 35em;
+  z-index: 1
+
+}
+
+.bgcollection img{
+  width: 1em;
+  
 }
