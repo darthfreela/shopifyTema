@@ -6,19 +6,19 @@
 
 <header id="headercollection" class="section-header text-center">
   <div id="topo">
-    <h1>{{ collection.title }}</h1>
-    <hr class="hr--small">
+    <div id="divtitulocoll">
+      <h1>{{ collection.title }}</h1>
+    </div>
     {% if collection.description != blank %}
       <div class="grid">
         <div class="grid__item">
-          <div class="rte">
+          <div id="desccoll" class="rte">
             {{ collection.description }}
           </div>
         </div>
       </div>
     {% endif %}
     
-
     {% if settings.collection_tags_enable %}
       {% if collection.all_tags.size > 0 %}
         {% comment %}
@@ -77,14 +77,41 @@
     {% endif %}
   </div>  
 </header>
-<div class="bgcollection">
-     {% if collection.image %}
-  <img src="{{ collection | img_url: 'Large' }}"  alt="{{ collection.title | escape }}"/>
-{% else %}
-<img src="{{ collection.products.first }}"  alt="{{ collection.title | escape }}" />
-{% endif %}
+<!--tipo de colunas-->
+<div id="colltypes">
+  <ul>
+    {% for tag in collection.all_types %}  
+        <li>
+          <a href="http://testedarth.myshopify.com/collections/all/{{ tag }}">{{ tag }}
+          </a>
+        </li>
 
-  </div>
+    {% endfor %}
+  </ul>
+</div>
+<!--imagem de bg-->
+<div class="bgcollection">
+  {% if collection.image %}
+     <img src="{{ collection | img_url: 'original' }}"  alt="{{ collection.title | escape }}"/>
+  {% else %}
+    <img src="{{ collection.products.first }}"  alt="{{ collection.title | escape }}" />
+  {% endif %}
+</div>
+<!--links de localização -->
+<div class="linksWhere">
+  <ul>
+    <li>Home</li>>
+    <li>Blog</li>
+  </ul>
+</div>
+<!--modo de visualização-->
+<div class="changemode">
+  <ul>
+  </ul>
+</div>
+<!--barra-->
+<hr id="hrcoll">
+<!--range de produtos-->
 {% if settings.collection_products_grid == 'collage' %}
   <div class="grid grid-collage">
     {% comment %}

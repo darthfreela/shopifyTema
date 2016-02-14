@@ -45,6 +45,7 @@
 
   {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
   {{ 'modernizr.min.js' | asset_url | script_tag }}
+  {{ 'zoom.js' | asset_url | script_tag }}
   {{ 'darth.js' | asset_url | script_tag }}
 
   {% comment %}
@@ -210,13 +211,13 @@
                   {% endcomment %}
                   {% assign logo_inverted_url = 'logo-inverted.png' | asset_url %}
                   <a href="/" itemprop="url" class="site-header__logo-link{% if settings.logo_use_inverted %} logo--has-inverted{% endif %}">
-                    <img id="logoa" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
                     <img id="logob" src="{{ 'logo_black.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                    <img id="logoa" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                    
                   </a>
                   {% if settings.logo_use_inverted %}
-                    <a href="/" itemprop="url" class="logo--inverted">
-                      <img src="{{ 'logo-inverted.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
-                    </a>
+                    <img id="logob" src="{{ 'logo_black.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                    <img id="logoa" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
                   {% endif %}
                 {% else %}
                   <a href="/" itemprop="url">{{ shop.name }}</a>

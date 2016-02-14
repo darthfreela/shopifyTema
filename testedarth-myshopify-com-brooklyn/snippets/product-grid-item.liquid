@@ -30,9 +30,9 @@
 
 <div class="grid__item grid-product {{ grid_item_width }}{% if sold_out %} is-sold-out{% endif %}">
   <div class="grid-product__wrapper">
-    <div class="grid-product__image-wrapper">
+    <div class="grid-product__image-wrapper ">
       <a class="grid-product__image-link" href="{{ product.url | within: collection }}">
-        <img src="{{ product | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}" class="grid-product__image">
+        <img id="imgz" src="{{ product | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}" class="grid-product__image">
       </a>
       {% if sold_out %}
         <div class="grid-product__sold-out">
