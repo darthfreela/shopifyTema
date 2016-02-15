@@ -1,0 +1,174 @@
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	#logo {
+        top: 0em;
+		left: 0em;
+    }
+	.medium-down--hide {
+		display: block !important;
+	}
+	#menu {
+		padding-top: 3em;
+		float: left;
+		font-size: 0.75em !important;
+	}
+	#opc {
+		padding-right: 0em;
+	}
+	#AccessibleNav {
+		margin-left: -45em;
+	}
+	.grid__item .site-nav--mobile .icon-fallback-text {
+		display: none;
+	}
+	#divMarcas ul {
+		margin: 0 0 15px 1em;
+	}
+		#divMarcas ul li {
+			margin-right: -20px;
+		}
+			#divMarcas ul li a {
+				padding: 0px 1em;
+			}
+		
+	#product1 {
+		height: 20.2em;
+		width: 16.3em;
+	}
+	#divProduct1 {
+		top: 6em;
+		left: 15%;
+	}
+	#imgProduct1 img {
+		height: 20.2em;
+		width: 23.3em;
+	}
+	#product2 {
+		height: 10.125em;
+		width: 17em;
+	}
+	#divProduct2 {
+		top: 2em;
+		left: 14%;
+	}
+	#imgProduct2 img {
+		height: 10.125em;
+		width: 36em;
+	}
+	#product3 {
+		height: 10.125em;
+		width: 17em;
+	}
+	#divProduct3 {
+		top: 1em;
+		left: 17%;
+	}
+	#imgProduct3 img {
+		height: 9em;
+		width: 36em;
+	}
+	#product4 {
+		height: 10.125em;
+		width: 15em;
+	}
+	#divProduct4 {
+		top: 2em;
+		left: 11%;
+	}
+	#imgProduct4 img {
+		height: 10.125em;
+		width: 25.000em;
+	}
+	#product5 {
+		height: 10.125em;
+		width: 15em;
+	}
+	#divProduct5 {
+		top: 1em;
+		left: 14%;
+	}
+	#imgProduct5 img {
+		height: 9em;
+		width: 25.000em;
+	}
+	.fundo {
+		top: 5.5em;
+		width: 100%;
+	}
+	#gridItemTop {
+		margin-top: -14.5em;
+		margin-left: -29px;
+	}
+	.rte {
+		margin-bottom: 15px;
+		width: 48em;
+	}
+	.formataTxt {
+		margin-left: 0em;
+		width: 100%;
+	}
+	#divMarcas2 {
+		top: 6em;
+		left: 1.5em;
+	}
+	#divMarcas2 ul {
+		margin: 0 0 15px 1em;
+	}
+		#divMarcas2 ul li {
+			margin: 0;
+			width: 5em;
+		}
+			#divMarcas2 ul li a {
+				padding: 0px 1em;
+			}
+				#divMarcas2 ul li a img {
+					width: 100%;
+				}
+	.hr--medium {
+		margin: 6px auto;
+	}
+	.collection-grid {
+		margin-bottom: -32px;
+		height: 19em;
+	}		
+
+	#colOne {
+		left: 0%;
+	}
+		#colOne span {
+			margin-left: 30px;
+			font-weight: bold;
+		}
+	#colTwo {
+		left: 22%;
+	}
+		#colTwo span {
+			margin-left: 16%;
+			font-weight: bold;
+		}
+	#colThree {
+		left: 41%;
+	}
+		#colThree span {
+			margin-left: 16%;
+			font-weight: bold;
+		}
+	.newsletterdarth {
+		top: 5.3em;
+		left: 69%;
+	}
+	#newdiv   span {
+		font-weight: bold;
+	}
+	.social {
+		top: 25%;
+		left: 64%;
+    }
+		.social span {
+			font-weight: bold;
+		}
+	#linksCop {
+		top: 37%;
+		left: 69.8%;
+	}
+}
+
