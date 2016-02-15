@@ -1,0 +1,36 @@
+@media only screen and (device-width: 1440px) and (device-height: 900px){
+	body {
+		padding: 0 5%;
+	}
+	#product2{
+		width: 36em;
+	}
+	#product4 {
+		top: -18.1em;
+		left: 0em;
+		    width: 20.7em;
+
+	}
+		#divProduct4 {
+			left: 23%;
+		}
+		#imgProduct4 img {
+			width: 20em;
+		}
+	#product5 {
+		width: 20.7em;
+		height: 18.125em;
+	}
+	#divProduct5 {
+		left: 23%;
+	}
+	#imgProduct5>img {
+		height: 17em;
+	}
+	#img1, #img2 {
+		WIDTH: 50%;
+	}
+	#divMarcas2 {
+		left: -1em;
+	}
+}
