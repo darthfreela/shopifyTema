@@ -9,6 +9,12 @@
         top: 16em;
     }
 	
+    #hrFooter {
+        position: relative;
+        width: 18em;
+        top: 1em;
+    }
+
     #logo {
         top: 0em;
 		left: 0.5%;
@@ -435,9 +441,6 @@
 		left: 10.5em;
 	}
 
-    #hrFooter {
-        width: 18em;
-    }
-
+    
     
 }
