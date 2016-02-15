@@ -3,6 +3,11 @@
 	.site-nav--mobile {
 		margin-left: 16em;
 	}
+
+    #txtOurBrand{
+        position: relative;
+        top: 16em;
+    }
 	
     #logo {
         top: 0em;
@@ -11,6 +16,13 @@
 	#cart {
 		display: none;
 	}
+
+    .hrHome{
+        position: relative;
+        top: 1em;
+        left: 0em;
+    }
+
 	.hero__slide .hero__title {
 		font-size: 2em;
 		white-space: nowrap;
@@ -174,6 +186,7 @@
     }
 	.fundo {
 		top: 8em;
+        height: 39em;
 	}
 	#gridItemTop div .h1Home{
 		margin-bottom: 1em;
@@ -184,7 +197,7 @@
 		width: 100%;
 	}
 	.grid .imgFooter {
-		top: 3em;
+		top: 4em;
 	}
 		.grid .imgFooter #img2 {
 			top: -0.48em;
@@ -421,4 +434,10 @@
 		top: 12em;
 		left: 10.5em;
 	}
+
+    #hrFooter {
+        width: 18em;
+    }
+
+    
 }
