@@ -6,10 +6,17 @@
 	
     #logo {
         top: 0em;
-		left: -7.5%;
+		left: 0.5%;
     }
 	#cart {
 		display: none;
+	}
+	.hero__slide .hero__title {
+		font-size: 2em;
+		white-space: nowrap;
+	}
+	.hero__slide .hero__subtitle {
+		font-size: 1.1em;
 	}
     #divMarcas ul {
         margin: 0px 0 15px 1em;
@@ -374,6 +381,9 @@
     }
 	.fundo {
 		top: 8em;
+	}
+	#gridItemTop {
+		margin-top: 0.5em;
 	}
 	#gridItemTop div .h1Home{
 		margin-bottom: 1em;
