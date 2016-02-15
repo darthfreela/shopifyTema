@@ -16,8 +16,12 @@ h1{
   font-family: "Avenir Book";
  }
 
+#logoa
+{
+  display:inline;
+ }
  #logob{
-  display:none;
+  display:inline;
  }
  .site-header{
     height: 7em;
@@ -40,6 +44,17 @@ h1{
   
   fill:white;
 
+}
+
+.hero__slide .hero__title {
+    font-size: 2.37em;
+
+}
+
+.hero__slide .hero__subtitle {
+    font-size: 1.75em;
+    font-family: 'Minion Pro';
+    text-transform: none;
 }
 
 #svgsearch>svg{
@@ -101,8 +116,8 @@ h1{
    float:left;
    width: 100%;
    margin-top: 0px;
-   font-weight: bolder;
-   font-size: 0.9em !important;
+   font-weight: bold;
+   font-size: 0.85em !important;
    font-family: 'Minion Pro'
 }
 
@@ -131,7 +146,7 @@ h1{
 #divSearch{
   position: relative;
   top: -2.4em;
-  left: -79em;
+  left: -83em;
 }
 
 #divSearch  ul>li{
@@ -146,6 +161,7 @@ h1{
   padding-left: 0.4em;
   font-size: 1em;
   font-family: 'Avenir';
+  font-weight: normal;
 }
 /*======================================================================FIM HEADER*/
 /*===================================INICIO LOGOMARCAS============================*/
@@ -183,10 +199,13 @@ h1{
 .btnProduct{
   position: relative;
   left: 1.3em;
-  height:1.563em; 
-  width:8.125em;
+  height: 1.8em;
+  width: 9.5em;
   background-color: white;
   top: -17px;
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 0.2em;
 }
 /*hr products*/
 .hrProduct{
@@ -425,8 +444,10 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 .h1Home{
   font-size: 1.5em;
-  font-family: 'Avenir Medium'
+  font-family: 'Avenir';
   color: #6b757b;
+  padding-bottom: 0px;
+  height: 0em;
 }
 
 .hrHome{
@@ -436,11 +457,13 @@ background-color: rgba(107, 117, 123, 0.8);
 .formataTxt{
   margin-left: 17em;
   color: #4c4d4e;
+  font-size: 1em;
+  font-family: 'Avenir';
   width: 50em;
 }
 
 #gridItemTop {
-  margin-top: 2.5em;
+  margin-top: -15.5em;
 }
 /*=======================================================================FIM OUR BRAND*/
 /*==================================INICIO MARCAS2================================= */
@@ -449,7 +472,7 @@ background-color: rgba(107, 117, 123, 0.8);
   height: 9em;
   width: 100%;
   top: 2em;
-  left: 0;
+  left: 1.5em;
 }
 
 #divMarcas2 ul>li{
@@ -694,7 +717,7 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 .hoverzoom >a> img {
-   width: 100%; 
+  width: 100%; 
   border-radius: 2px;
   -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
       -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
@@ -872,6 +895,19 @@ background-color: rgba(107, 117, 123, 0.8);
 }
 
 /*=======================BG COLLECTION*/
+#headercollection{
+  color:white;
+  font-family: 'Avenir';
+}
+
+#desccoll{
+  position: relative;
+  top: 1em;
+  left: 14em;
+  width: 28em;
+  font-family: 'Avenir';
+  font-style: normal;
+}
 
 #topo{
   position: relative;
@@ -880,13 +916,160 @@ background-color: rgba(107, 117, 123, 0.8);
 
 .bgcollection{
   position: absolute;
-  top: 17em;
-  left: 35em;
+  top: 7em;
+  left: 0em;
   z-index: 1
 
 }
 
 .bgcollection img{
-  width: 1em;
+  width: 85em;
   
+}
+
+#divtitulocoll{
+  position:relative;
+  top: auto;
+  left: 27.5em;
+  color: white;
+  border:solid 1px #fff;
+  width: 10em;
+  height: 3.5em;
+}
+
+#divtitulocoll h1{
+  padding-top: 0.2em;
+  font-family: 'Minion Pro' !important;
+}
+#colltypes{
+  position: relative;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-family: 'Minion Pro';
+  text-align: center;
+  font-size: 0.87em;
+}
+
+#colltypes > ul > li{
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+}
+
+#hrcoll{
+  width: 100%; 
+  border:solid 1px rgba(143, 151, 154, 0.6);
+}
+
+.linksWhere{
+  position: relative;
+  top: 3em;
+  left: 0;
+  font-size: 0.8em;
+  font-family: 'Minion Pro';
+  
+}
+.linksWhere ul{
+  margin: -22px 0px;
+  padding: 0;
+  
+}
+
+.linksWhere ul>li{
+  display: inline-block;
+  
+}
+
+.changemode{
+  position: relative;
+  top: 1.8em;
+  left: 28em;
+  width: 12em;
+  font-family: 'Minion Pro';
+}
+
+.changemode ul{
+  margin: 0;  
+  padding: 0;
+  
+}
+
+.changemode ul>li{
+  display: inline-block;
+  margin: 0;
+  padding-right: 1em;
+}
+
+/*tamanho das imagens*/
+.grid-collage .large--one-half .grid-product__image-link {
+    height: 40em;
+}
+
+.grid-product__image-link{
+  background-color: white;
+}
+
+#PageContainer {
+    overflow: visible;
+}
+
+#modeModel:hover {
+  color:black;
+  cursor: pointer;
+}
+
+#modeProduct:hover {
+  color:black;
+  cursor: pointer;
+}
+
+.grid-collage .grid-product__image {
+  padding: 0px;
+  top: 20em;
+  position:relative;
+}
+
+.zoomContainer {
+  position:relative;
+}
+
+.colproducttitle{
+  position: relative;
+  height: 0em;
+  width: 13em;
+  top: -1.75em;
+  left: 9em;
+}
+
+.colproducttitle > span{
+  color:#6b757b;
+  font-size:1.25em;
+  font-family: 'Minion Pro';
+  font-style: normal;
+}
+
+.long-dash1{
+  position: relative;
+  top: 0;
+  left: 2em;
+  width: 10em;
+  border: solid 1px #99A4A0;
+}
+
+.priceposition{
+  position: relative;
+  top: -3em;
+  left: 0;
+}
+.long-dash2{
+  position: relative;
+  top: -5.4em;
+  left: 18em;
+  width: 11em;
+  border: solid 1px #99A4A0;
+}
+
+#modeModel{
+  font-weight: bold;
 }
