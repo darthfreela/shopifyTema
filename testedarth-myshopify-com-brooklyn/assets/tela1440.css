@@ -1,41 +1,94 @@
 @media only screen and (device-width: 1440px){
-	body {
-		padding: 0 5%;
+	.main-content {
+    		width: 100%;
 	}
+	.homeProduct {
+       height: 36.5em;
+   		width: 89%;
+	}
+
+	#divSearch {
+    	left: -87em;
+    	font-family: 'Avenir' !important;
+    	font-size: 1.2em;
+	}
+
 	#product2{
 		width: 36em;
 	}
 	#product4 {
-		top: -18.1em;
-		left: 0em;
-		    width: 20.7em;
+		top: -36.1em;
+    	left: 10em;
+    	width: 30.7em;
 
 	}
 		#divProduct4 {
 			left: 23%;
 		}
 		#imgProduct4 img {
-			width: 20em;
+			width: 100%;
 		}
 	#product5 {
-		width: 20.7em;
-		height: 18.125em;
+		width: 30.7em;
+    	height: 18.125em;
+    	top: -18em;
+    	left: 40.7em;
 	}
 	#divProduct5 {
 		left: 23%;
 	}
 	#imgProduct5>img {
 		height: 17em;
+		width: 100%;
 	}
 	#img1, #img2 {
-		WIDTH: 50%;
+		width: 50%;
 	}
 	#divMarcas2 {
 		left: -1em;
 	}
 
-	/*tela range*/
-	.main-content{
+	.fundo {
+		top: 4.5em;
+    	height: 25em;
+	}
+
+	#txtOurBrand{
+		position: relative;
+    	top: -3em;
+	}
+
+	.hrHome {
+		position: relative;
+		left: -1em;
+	}
+
+	.formataTxt{
+		position: relative;
+		left: 4em;
+	}
+
+	#img1 {
+    	top: 3em;
+    	left: 0;
+	}
+
+	#img2{
+		top: 3em;
+    	left: 0em;
+	}
+
+	#img1 img{
+    	width: 100%;
+	}
+
+	#img2 img{
 		width: 100%;
+	}
+
+	#divMarcas2 {
+    	position: relative;
+    	top: 3em;
+    	padding-left: 6em;
 	}
 }
