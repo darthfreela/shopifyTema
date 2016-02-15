@@ -1,4 +1,4 @@
-@media only screen and (device-width: 1440px) and (device-height: 900px){
+@media only screen and (device-width: 1440px){
 	body {
 		padding: 0 5%;
 	}
@@ -32,5 +32,10 @@
 	}
 	#divMarcas2 {
 		left: -1em;
+	}
+
+	/*tela range*/
+	.main-content{
+		width: 100%;
 	}
 }

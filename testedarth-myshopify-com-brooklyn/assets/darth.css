@@ -1073,3 +1073,69 @@ background-color: rgba(107, 117, 123, 0.8);
 #modeModel{
   font-weight: bold;
 }
+
+.divnews{
+  border: solid 1px #99A4A0;
+  position: relative;
+  top:2em;
+  width: 31em;
+  height: 40em;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.divnews>span{
+ font-family: 'Minion Pro';
+ font-size: 2em;
+}
+
+#hrnewsrange{
+  position: relative;
+  border: solid 1px #99A4A0;
+  top: -2em;
+  left: 14em;
+  width: 3em;
+}
+
+#txtdivrange{
+  position: relative;
+  top: 0;
+  left: 5em;
+  width: 21em;
+  font-family: 'Minion Pro';
+  font-size: 1em;
+}
+
+#newsdivrange{
+  position: relative;
+  top: 7em;
+  left: 0;
+  width: 21em;
+
+}
+
+.newsrange{
+  width: 18em !important;
+  border-right: solid 1px #7D8787;
+  font-family: 'Avenir'
+}
+
+.btnnewdivrange{
+  position: relative;
+  top: 5em;
+  left: -19em;
+  width: 13em;
+  background: transparent;
+  text-transform: none;
+  color: #99A4A0;
+}
+
+.grid-product__meta{
+  height: 5em;
+}
+
+.btnnewdivrange>span{
+  font-family: 'Minion Pro';
+  font-size: 1.5em;
+  font-weight: bold;
+}

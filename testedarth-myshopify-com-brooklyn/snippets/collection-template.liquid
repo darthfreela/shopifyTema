@@ -187,6 +187,30 @@
     {% endfor %}
   </div>
 {% endif %}
+<div class="divnews">
+  <span>Newsletter</span>
+  <hr id="hrnewsrange">
+  <div id="txtdivrange">
+    <span>Keep up-to-date with what's going on at The Linen Works - product releases, promotions, book and film recommendations etc.</span>
+    <div id="newsdivrange">
+    <!--newslatter-->
+     <label for="Email" class="newsletter__label hidden-label">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div class="newsletter--form">
+                  <div class="input-group imputNews">
+                    <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="eneter your email adress" name="contact[email]" id="Email" class="input-group-field newsletter__input newForm newsrange" autocorrect="off" autocapitalize="off">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btnnewdivrange" name="commit" id="Subscribe">
+                        <span class="newsletter__submit-text--large">Sing up now</span>
+                        <span class="newsletter__submit-text--small">
+                          <span class="icon icon-arrow-right" aria-hidden="true"></span>
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+    </div>
+  </div>
+</div> 
 
 {% if paginate.pages > 1 %}
   <div class="pagination">

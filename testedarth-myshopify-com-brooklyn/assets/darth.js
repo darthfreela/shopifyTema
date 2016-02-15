@@ -76,7 +76,7 @@ $(document).ready(function(){
 	//VERIFICAR QUAL PÁGINA É E ADICIONAR O HEADER
 	// PEGANDO O NOME DO DOCUMENTO OU PÁGINA ATUAL
 	documento = window.location.pathname;
- 
+ 	
 	if(documento=="/") {
 		$('#logob').css('display', 'none');
 		$('.site-header').addClass('bgmenu');
@@ -176,6 +176,8 @@ $(document).ready(function(){
         $('#divSearch ul>li>a').css('color', '#6B757B');
        
 	}
+
+
 	//Muda a visualização dos produtos no range
 	$('#modeModel').on('click', function(){
 			$('#modeModel').css('font-weight', 'bold');
