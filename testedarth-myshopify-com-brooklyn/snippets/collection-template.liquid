@@ -198,7 +198,7 @@
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter--form">
                   <div class="input-group imputNews">
-                    <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="eneter your email adress" name="contact[email]" id="Email" class="input-group-field newsletter__input newForm newsrange" autocorrect="off" autocapitalize="off">
+                    <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="enter your email adress" name="contact[email]" id="Email" class="input-group-field newsletter__input newForm newsrange" autocorrect="off" autocapitalize="off">
                     <span class="input-group-btn">
                       <button type="submit" class="btn btnnewdivrange" name="commit" id="Subscribe">
                         <span class="newsletter__submit-text--large">Sing up now</span>
@@ -212,6 +212,16 @@
   </div>
 </div> 
 
+<div id="recently">
+    <!--modo de visualização-->
+  <div class="viewed">
+    <ul>
+      <li id="recentlyviewed">Recently Viewed</li>
+      <li id="mightlike">You Might Also Like This</ul>
+  </div>
+  <!--barra-->
+  <hr id="hrcoll">
+</div>
 {% if paginate.pages > 1 %}
   <div class="pagination">
     {{ paginate | default_pagination | replace: '&laquo; Previous', '<span class="icon icon-arrow-left" aria-hidden="true"></span>' | replace: 'Next &raquo;', '<span class="icon icon-arrow-right" aria-hidden="true"></span>' }}
