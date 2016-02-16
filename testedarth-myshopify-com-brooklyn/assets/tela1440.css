@@ -91,4 +91,10 @@
     	top: 3em;
     	padding-left: 6em;
 	}
+	.bgcollection img {
+		width: 90em;
+	}
+	#colltypes {
+		top: 1.5em;
+	}
 }
